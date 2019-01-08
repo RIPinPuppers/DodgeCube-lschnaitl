@@ -14,6 +14,8 @@ Status: Idee/Concept
 
 Steuerung: Cursor (Maus) für Menü Elemente, Tastaturtasten A und D um den Spieler nach links und rechts zu bewegen.
 
+<strong>Konzept:</strong>
+
 <div>
 <img src="./Screenshots/Screenshot1.jpg" width="250">
 </div>
