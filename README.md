@@ -6,11 +6,11 @@ Development Platform: Windows 10, Unity 2018.2.14f1, Visual Studio Community 201
 
 Target Platform: PC Standalone
 
-Used resources:
+Used resources: none
 
 Game Style: 2D
 
-Status: Idee/Concept
+Status: Implementation angefangen
 
 Steuerung: Cursor (Maus) für Menü Elemente, Tastaturtasten A und D um den Spieler nach links und rechts zu bewegen.
 
