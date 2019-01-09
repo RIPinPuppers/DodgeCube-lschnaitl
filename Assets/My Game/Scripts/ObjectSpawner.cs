@@ -5,6 +5,8 @@ using UnityEngine;
 public class ObjectSpawner : MonoBehaviour {
 
     //reference for deathcube and apple
+    public GameObject apple;
+    public GameObject deathCube;
     //Serializeable spawn positions for the objects
     //timer variables
 

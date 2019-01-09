@@ -18,9 +18,15 @@ public class DeathCube : MonoBehaviour {
 	}
 
     //create collision detection
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
 
-        //if the player gets hit (Player tag)
-            //check if player has lives left
-                //switch to game over screen if no left
-                //decrease lives if atleast one left
+        }
+    }
+    //if the player gets hit (Player tag)
+    //check if player has lives left
+    //switch to game over screen if no left
+    //decrease lives if atleast one left
 }
