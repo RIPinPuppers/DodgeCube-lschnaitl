@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212588135683568208}
   - component: {fileID: 61649691904136462}
   - component: {fileID: 50411579161627080}
+  - component: {fileID: 114223229499246222}
   m_Layer: 0
   m_Name: DeathCube
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1823742565980834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8, y: 1.16, z: 0}
+  m_LocalPosition: {x: -5.2455835, y: -1.3716381, z: 0}
   m_LocalScale: {x: 0.271, y: 0.271, z: 0.271}
   m_Children: []
   m_Father: {fileID: 0}
@@ -87,6 +88,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.5, y: 4.57}
   m_EdgeRadius: 0
+--- !u!114 &114223229499246222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1823742565980834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35818aaeae77d2d4dbb5e3a22a6bd163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212588135683568208
 SpriteRenderer:
   m_ObjectHideFlags: 1

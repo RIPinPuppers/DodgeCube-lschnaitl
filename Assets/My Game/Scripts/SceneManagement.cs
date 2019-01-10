@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneLoader : MonoBehaviour {
+public class SceneManagement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -23,5 +23,10 @@ public class SceneLoader : MonoBehaviour {
             SceneManager.LoadScene(sceneName);
         else
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void QuitToDesktop()
+    {
+        Application.Quit();
     }
 }

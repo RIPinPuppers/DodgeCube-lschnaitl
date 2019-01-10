@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathCube : MonoBehaviour {
 
+    Player player;
+
 	// Use this for initialization
 	void Start () {
-		
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 	}
 	
 	// Update is called once per frame
@@ -22,11 +25,12 @@ public class DeathCube : MonoBehaviour {
     {
         if (collision.collider.CompareTag("Player"))
         {
-
+            player.lives--;
+        }
+        else if (collision.collider.CompareTag("Floor"))
+        {
+            Destroy(this.gameObject);
         }
     }
-    //if the player gets hit (Player tag)
-    //check if player has lives left
-    //switch to game over screen if no left
-    //decrease lives if atleast one left
+    
 }
