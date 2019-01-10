@@ -279,7 +279,6 @@ GameObject:
   m_Component:
   - component: {fileID: 210454647}
   - component: {fileID: 210454648}
-  - component: {fileID: 210454649}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Manager
@@ -309,17 +308,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4839af64e3035a641a7ba06e0ccac704, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &210454649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 210454646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e41dc44c0eef0024597355ac173ae7e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &252798183
@@ -1153,6 +1141,16 @@ Prefab:
       propertyPath: timerText
       value: 
       objectReference: {fileID: 1693915264}
+    - target: {fileID: 114501120698834724, guid: c5ede51426cd2e145a050bf4a57fa664,
+        type: 2}
+      propertyPath: rotSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501120698834724, guid: c5ede51426cd2e145a050bf4a57fa664,
+        type: 2}
+      propertyPath: speed
+      value: 0.15
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 50874411223966170, guid: c5ede51426cd2e145a050bf4a57fa664, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: c5ede51426cd2e145a050bf4a57fa664, type: 2}
