@@ -12,20 +12,32 @@ public class Player : MonoBehaviour {
 
     public int lives;
     public int maxLives;
-    public TextMesh livesText;
+    public Color deathHitColor;
+    public Text livesText;
+
+    public Text timerText;
+    private float timer;
+    private bool setTimer = true;
 
     SceneManagement sceneManagement;
 
 	// Use this for initialization
 	void Start () {
-        sceneManagement = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SceneManagement>();
+        sceneManagement = GameObject.FindGameObjectWithTag("Manager").GetComponent<SceneManagement>();
         lives = maxLives;
+        livesText.text = lives.ToString();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        //livesText.text = lives.ToString();
+
+        if (setTimer)
+        {
+            timer += Time.deltaTime;
+            timerText.text = timer.ToString("F1") + " sec";
+        }
+
 
         //move the player right
         if (Input.GetKey(KeyCode.D))
@@ -43,14 +55,36 @@ public class Player : MonoBehaviour {
 
         if(lives <= 0)
         {
+            setTimer = false;
+            PlayerPrefs.SetFloat("Time", timer);
             sceneManagement.ChangeToScene("GameOver");
+
         }
 
         //restrict movement to the floor borders
-
+        
     }
 
-    //detect collision
-    
+    public void ChangeLives(int amount, bool mode)
+    {
+        if (mode)
+        {
+            lives += amount;
+        }
+        else
+        {
+            lives -= amount;
+        }
+        livesText.text = lives.ToString();
+    }
+
+
+
+    public void ResetTimer()
+    {
+        timer = 0;
+        timerText.text = "0.0 sec";
+    }
+
 
 }

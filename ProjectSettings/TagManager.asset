@@ -9,6 +9,7 @@ TagManager:
   - DeathCubeSpawn
   - AppleSpawn
   - Floor
+  - Manager
   layers:
   - Default
   - TransparentFX

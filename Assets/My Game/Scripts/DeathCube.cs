@@ -25,12 +25,11 @@ public class DeathCube : MonoBehaviour {
     {
         if (collision.collider.CompareTag("Player"))
         {
-            player.lives--;
+            player.ChangeLives(1, false);
         }
         else if (collision.collider.CompareTag("Floor"))
         {
             Destroy(this.gameObject);
         }
     }
-    
 }

@@ -7,6 +7,8 @@ public class Apple : MonoBehaviour {
     Player player;
     public float timeActive = 5;
 
+    
+
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
@@ -15,20 +17,18 @@ public class Apple : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Player"))
         {
-            if (player.lives <= player.maxLives)
+            if (player.lives < player.maxLives)
             {
-                player.lives++;
+                player.ChangeLives(1, true);
                 Destroy(this.gameObject);
             }
         }
     }
-    //if player, check how many lives player has
-    //give live if less than max lives
 }
