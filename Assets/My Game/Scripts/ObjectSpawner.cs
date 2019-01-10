@@ -51,26 +51,17 @@ public class ObjectSpawner : MonoBehaviour {
             SpawnApples();
             timerTimeApple = ApplesSpawnTime;
         }
-
-
-        //spawn deathcubes - random spawnposition
-
-        //spawn apples - random spawnposition
-
-
     }
 
 
     //function for spawning apples
     void SpawnApples()
     {
-        print("Spawning Apples");
         Instantiate(apple, AppleSpawnPositions[Random.Range(0, AppleSpawnPositions.Length)].transform.position, Quaternion.identity);
     }
     //function for spawning deathcubes
     void SpawnDeathCubes()
     {
-        print("Spawning DeathCubes");
         for (int i = 0; i < Random.Range(minDeathCubeAmount, DeathCubeSpawnPositions.Length); i++)
         {
             

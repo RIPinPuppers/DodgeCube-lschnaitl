@@ -9,7 +9,7 @@ public class GameOverScreen : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        time.text = PlayerPrefs.GetFloat("Time", 0).ToString();
+        time.text = PlayerPrefs.GetFloat("Time", 0).ToString("F1") + " sec";
 	}
 	
 	// Update is called once per frame
