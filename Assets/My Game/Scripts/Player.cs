@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Player : MonoBehaviour {
 
@@ -13,9 +14,9 @@ public class Player : MonoBehaviour {
     public int lives;
     public int maxLives;
     public Color deathHitColor;
-    public Text livesText;
+    public TextMeshProUGUI livesText;
 
-    public Text timerText;
+    public TextMeshProUGUI timerText;
     private float timer;
     private bool setTimer = true;
 

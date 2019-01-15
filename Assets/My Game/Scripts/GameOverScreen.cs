@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameOverScreen : MonoBehaviour {
 
-    public Text time;
+    public TextMeshProUGUI time;
 
 	// Use this for initialization
 	void Start () {
+
         time.text = PlayerPrefs.GetFloat("Time", 0).ToString("F1") + " sec";
 	}
 	
