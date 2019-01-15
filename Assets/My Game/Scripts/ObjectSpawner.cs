@@ -21,8 +21,9 @@ public class ObjectSpawner : MonoBehaviour {
 
     //other changables
     public int minDeathCubeAmount = 2;
-	// Use this for initialization
-	void Start () {
+    public int maxDeathCubeAmount = 5;
+    // Use this for initialization
+    void Start () {
         DeathCubeSpawnPositions = GameObject.FindGameObjectsWithTag("DeathCubeSpawn");
         AppleSpawnPositions = GameObject.FindGameObjectsWithTag("AppleSpawn");
         SpawnDeathCubes();
@@ -57,16 +58,22 @@ public class ObjectSpawner : MonoBehaviour {
     //function for spawning apples
     void SpawnApples()
     {
-        Instantiate(apple, AppleSpawnPositions[Random.Range(0, AppleSpawnPositions.Length)].transform.position, Quaternion.identity);
+        float randomX = Random.Range(AppleSpawnPositions[0].transform.position.x, AppleSpawnPositions[1].transform.position.x);
+        Instantiate(apple, new Vector2(randomX, AppleSpawnPositions[0].transform.position.y), Quaternion.identity);
     }
     //function for spawning deathcubes
     void SpawnDeathCubes()
     {
-        for (int i = 0; i < Random.Range(minDeathCubeAmount, DeathCubeSpawnPositions.Length); i++)
+        /* for (int i = 0; i < Random.Range(minDeathCubeAmount, DeathCubeSpawnPositions.Length); i++)
+         {
+
+             Instantiate(deathCube, DeathCubeSpawnPositions[Random.Range(0, DeathCubeSpawnPositions.Length)].transform.position, Quaternion.identity);
+
+         }*/
+        for (int i = 0; i < Random.Range(minDeathCubeAmount, maxDeathCubeAmount); i++)
         {
-            
-            Instantiate(deathCube, DeathCubeSpawnPositions[Random.Range(0, DeathCubeSpawnPositions.Length)].transform.position, Quaternion.identity);
-            
+            float randomX = Random.Range(DeathCubeSpawnPositions[0].transform.position.x, DeathCubeSpawnPositions[1].transform.position.x);
+            Instantiate(deathCube, new Vector2(randomX, DeathCubeSpawnPositions[0].transform.position.y), Quaternion.identity);
         }
     }
 }
