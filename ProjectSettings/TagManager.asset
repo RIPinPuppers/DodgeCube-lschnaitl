@@ -10,6 +10,7 @@ TagManager:
   - AppleSpawn
   - Floor
   - Manager
+  - ObjectSpawner
   layers:
   - Default
   - TransparentFX

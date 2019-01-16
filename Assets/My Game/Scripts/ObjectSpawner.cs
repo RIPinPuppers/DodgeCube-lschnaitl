@@ -17,11 +17,12 @@ public class ObjectSpawner : MonoBehaviour {
     private float DeathCubesSpawnTime = 2;
     [SerializeField]
     private float ApplesSpawnTime = 10;
-
-
+    
     //other changables
     public int minDeathCubeAmount = 2;
     public int maxDeathCubeAmount = 5;
+
+
     // Use this for initialization
     void Start () {
         DeathCubeSpawnPositions = GameObject.FindGameObjectsWithTag("DeathCubeSpawn");
