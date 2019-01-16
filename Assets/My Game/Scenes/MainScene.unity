@@ -187,7 +187,7 @@ Transform:
   m_LocalScale: {x: 0.32572, y: 0.32572, z: 0.32572}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &77483241
 BoxCollider2D:
@@ -236,11 +236,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 107038407}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -819.34204, y: -377.8257, z: 16798.064}
-  m_LocalScale: {x: 107.9502, y: 107.9502, z: 107.9502}
+  m_LocalPosition: {x: -726.98, y: -377.8257, z: 16798.064}
+  m_LocalScale: {x: 95.8058, y: 107.9502, z: 107.9502}
   m_Children: []
   m_Father: {fileID: 1815770115}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &210454646
 GameObject:
@@ -300,34 +300,6 @@ MonoBehaviour:
   - 10
   - 20
   - 30
---- !u!1 &312630470
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 312630471}
-  m_Layer: 0
-  m_Name: '---------------------------SpawnPoints---------------------------'
-  m_TagString: EditorOnly
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &312630471
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 312630470}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.39775, y: 113.13264, z: 18637.434}
-  m_LocalScale: {x: 107.9502, y: 107.9502, z: 107.9502}
-  m_Children: []
-  m_Father: {fileID: 1815770115}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,7 +406,7 @@ RectTransform:
   m_Children:
   - {fileID: 706935937}
   m_Father: {fileID: 1815770115}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -583,11 +555,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 657530620}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 833.37555, y: 647.70123, z: 16798.064}
-  m_LocalScale: {x: 107.9502, y: 107.9502, z: 107.9502}
+  m_LocalPosition: {x: 707.32, y: 647.70123, z: 16798.064}
+  m_LocalScale: {x: 91.757675, y: 107.9502, z: 107.9502}
   m_Children: []
   m_Father: {fileID: 1815770115}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &706935936
 GameObject:
@@ -817,7 +789,7 @@ Transform:
   m_LocalScale: {x: 0.9249241, y: 0.92677206, z: 0.924}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &752350847
 GameObject:
@@ -841,39 +813,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 752350847}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 822.5805, y: -377.8257, z: 16798.064}
-  m_LocalScale: {x: 107.9502, y: 107.9502, z: 107.9502}
+  m_LocalPosition: {x: 730.22, y: -377.8257, z: 16798.064}
+  m_LocalScale: {x: 95.8058, y: 107.9502, z: 107.9502}
   m_Children: []
   m_Father: {fileID: 1815770115}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &883744091
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 883744092}
-  m_Layer: 0
-  m_Name: '-------------------------------environment--------------------------'
-  m_TagString: EditorOnly
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &883744092
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 883744091}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &897359904
 Prefab:
@@ -976,7 +920,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1815770115}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1125,12 +1069,92 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 997520836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -847.40906, y: 647.70123, z: 16798.064}
-  m_LocalScale: {x: 107.9502, y: 107.9502, z: 107.9502}
+  m_LocalPosition: {x: -721.35, y: 647.70123, z: 16798.064}
+  m_LocalScale: {x: 91.757675, y: 107.9502, z: 107.9502}
   m_Children: []
   m_Father: {fileID: 1815770115}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1551688051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1551688052}
+  - component: {fileID: 1551688054}
+  - component: {fileID: 1551688053}
+  m_Layer: 0
+  m_Name: WorldBorders
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1551688052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1551688051}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -3.3710024}
+  m_LocalScale: {x: 0.00926353, y: 0.00926353, z: 0.00926353}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1551688053
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1551688051}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -884.53375, y: -123.91196}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 57.997437, y: 766.54486}
+  m_EdgeRadius: 0
+--- !u!61 &1551688054
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1551688051}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 911.1426, y: -123.91196}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 58.501953, y: 766.54486}
+  m_EdgeRadius: 0
 --- !u!1 &1609329120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,7 +1212,7 @@ Transform:
   m_GameObject: {fileID: 1609329120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.9153, y: 3.9153, z: 3.9153}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1257,7 +1281,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 312630471}
   - {fileID: 997520837}
   - {fileID: 657530621}
   - {fileID: 107038408}
@@ -1335,6 +1358,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   apple: {fileID: 1991318643219806, guid: d96d2140605ac9d4488cc568f82a362f, type: 2}
   deathCube: {fileID: 1823742565980834, guid: 3073de0c60d42de45bd29d727ed1ed9a, type: 2}
+  megaDeathCube: {fileID: 1667645518064448, guid: 4fccce6f6e72e804e91f754c0151f7e9,
+    type: 2}
+  megaMode: 0
   DeathCubesSpawnTime: 1
   ApplesSpawnTime: 10
   minDeathCubeAmount: 2

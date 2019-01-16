@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 
 public class RNG : MonoBehaviour {
+
+    public TextMeshProUGUI numberText;
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +23,8 @@ public class RNG : MonoBehaviour {
         Debug.Log("flaot method: " + RNGFloat());
 
         Debug.Log("int method: " + RandomValue());
+
+        Debug.Log("method with seed and minMax as paramenters: " + RandomValueSeed(345, 1,5));
 	}
 	
 	// Update is called once per frame
@@ -27,9 +32,11 @@ public class RNG : MonoBehaviour {
 		
 	}
 
-    void RNGnice()
+    public void RNGnice()
     {
-        Debug.Log("Method: " + UnityEngine.Random.Range(1, 5));
+        int num = UnityEngine.Random.Range(1, 5);
+        Debug.Log("Method: " + num);
+        numberText.text = num.ToString();
     }
 
     float RNGFloat()
@@ -42,5 +49,11 @@ public class RNG : MonoBehaviour {
     {
         System.Random rnd = new System.Random(123);
         return rnd.Next(1, 5);
+    }
+
+    public int RandomValueSeed(int seed, int min, int max)
+    {
+        System.Random rnd = new System.Random(seed);
+        return rnd.Next(min, max);
     }
 }
