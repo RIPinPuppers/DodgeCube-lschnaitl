@@ -6,8 +6,8 @@ using TMPro;
 
 public class Player : MonoBehaviour {
 
-    [SerializeField] private readonly float speed;
-    [SerializeField] private readonly float rotSpeed = 1f;
+    [SerializeField] private float speed;
+    [SerializeField] private float rotSpeed = 1f;
 
     public int lives;
     public int maxLives;
