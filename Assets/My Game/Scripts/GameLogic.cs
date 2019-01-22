@@ -5,7 +5,7 @@ using TMPro;
 
 public class GameLogic : MonoBehaviour {
 
-    [SerializeField] private GameObject projectile;
+    [SerializeField] private readonly GameObject projectile;
 
     private float timer;
     private bool setTimer = true;
