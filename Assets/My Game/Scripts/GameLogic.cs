@@ -59,9 +59,6 @@ public class GameLogic : MonoBehaviour {
             objectSpawner.SpawnApples();
 
         }
-
-        //shooting timer not working 
-        //probably an additional bool varíable needed
     }
 
     public void StopTimer()

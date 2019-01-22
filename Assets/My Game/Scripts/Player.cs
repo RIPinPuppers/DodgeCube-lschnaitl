@@ -23,8 +23,8 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        sceneManagement = GameObject.FindGameObjectWithTag("Manager").GetComponent<SceneManagement>();
-        gameLogic = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameLogic>();
+        sceneManagement = GameObject.FindGameObjectWithTag(GlobalVariables.MANAGERTAG).GetComponent<SceneManagement>();
+        gameLogic = GameObject.FindGameObjectWithTag(GlobalVariables.MANAGERTAG).GetComponent<GameLogic>();
         lives = maxLives;
         livesText.text = lives.ToString();
 	}
