@@ -12,13 +12,13 @@ public class Apple : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag(GlobalVariables.PLAYERTAG).GetComponent<Player>();
         Destroy(this.gameObject, timeActive);
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (collision.collider.CompareTag(GlobalVariables.PLAYERTAG))
         {
             if (player.lives < player.maxLives)
             {

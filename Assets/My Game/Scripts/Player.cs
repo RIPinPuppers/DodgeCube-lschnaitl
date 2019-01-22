@@ -64,13 +64,10 @@ public class Player : MonoBehaviour {
     public void ChangeLives(int amount, bool mode)
     {
         if (mode)
-        {
             lives += amount;
-        }
         else
-        {
             lives -= amount;
-        }
+
         livesText.text = lives.ToString();
     }
 
