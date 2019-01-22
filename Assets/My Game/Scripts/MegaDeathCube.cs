@@ -6,6 +6,7 @@ public class MegaDeathCube : MonoBehaviour {
 
     Player player;
 
+
     // Use this for initialization
     void Start()
     {
@@ -19,12 +20,12 @@ public class MegaDeathCube : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if(collision.collider.CompareTag("Player"))
         {
             player.ChangeLives(2, false);
             Destroy(this.gameObject);
         }
-        else if (collision.collider.CompareTag("Floor") || collision.collider.CompareTag("Apple"))
+        else if(collision.collider.CompareTag("Floor") || collision.collider.CompareTag("Apple"))
         {
             Destroy(this.gameObject);
         }

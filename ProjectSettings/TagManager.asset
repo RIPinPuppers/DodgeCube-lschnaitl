@@ -7,10 +7,10 @@ TagManager:
   - DeathCube
   - Apple
   - DeathCubeSpawn
-  - AppleSpawn
   - Floor
   - Manager
   - ObjectSpawner
+  - PowerUpSpawn
   layers:
   - Default
   - TransparentFX

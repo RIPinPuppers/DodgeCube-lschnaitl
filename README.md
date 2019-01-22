@@ -10,8 +10,7 @@ Used resources: none
 
 Game Style: 2D
 
-Status: Implementation angefangen
-
+Status: Implementation fertig, code Säuberung im gange
 Steuerung: Cursor (Maus) für Menü Elemente, Tastaturtasten A und D um den Spieler nach links und rechts zu bewegen.
 
 <strong>Konzept:</strong>
