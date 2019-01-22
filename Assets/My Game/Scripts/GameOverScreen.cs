@@ -9,16 +9,9 @@ public class GameOverScreen : MonoBehaviour {
     public TextMeshProUGUI time;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 
         time.text = PlayerPrefs.GetFloat("Time", 0).ToString("F1") + " sec";
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    
-
 }

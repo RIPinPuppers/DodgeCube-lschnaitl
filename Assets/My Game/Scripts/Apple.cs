@@ -10,14 +10,10 @@ public class Apple : MonoBehaviour {
     
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         Destroy(this.gameObject, timeActive);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)

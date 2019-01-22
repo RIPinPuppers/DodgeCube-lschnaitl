@@ -5,26 +5,28 @@ using TMPro;
 
 public class GameLogic : MonoBehaviour {
 
-    public TextMeshProUGUI timerText;
+    [SerializeField] private GameObject projectile;
+
     private float timer;
     private bool setTimer = true;
-
-    public float[] TimeLevels;
     private bool l1 = true;
     private bool l2 = true;
     private bool l3 = true;
-    [SerializeField] private GameObject projectile;
-    
+   
+    public TextMeshProUGUI timerText;
+    public float[] TimeLevels;
 
     ObjectSpawner objectSpawner;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         objectSpawner = GameObject.FindGameObjectWithTag("ObjectSpawner").GetComponent<ObjectSpawner>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 
         if (setTimer)
         {
@@ -33,7 +35,7 @@ public class GameLogic : MonoBehaviour {
         }
 
 
-        if(timer > TimeLevels[0] && l1)
+        if (timer > TimeLevels[0] && l1)
         {
             l1 = false;
             objectSpawner.minDeathCubeAmount++;
@@ -60,9 +62,6 @@ public class GameLogic : MonoBehaviour {
 
         //shooting timer not working 
         //probably an additional bool varíable needed
-
-        
-
     }
 
     public void StopTimer()

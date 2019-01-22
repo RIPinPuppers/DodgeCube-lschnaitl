@@ -25,13 +25,15 @@ public class ObjectSpawner : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         DeathCubeSpawnPositions = GameObject.FindGameObjectsWithTag("DeathCubeSpawn");
         AppleSpawnPositions = GameObject.FindGameObjectsWithTag("PowerUpSpawn");
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 
         //deathcube timer
         if (timerTimeDeathCubes > 0)

@@ -6,10 +6,8 @@ using TMPro;
 
 public class Player : MonoBehaviour {
 
-    [SerializeField]
-    private float speed;
-    [SerializeField]
-    private float rotSpeed = 1f;
+    [SerializeField] private float speed;
+    [SerializeField] private float rotSpeed = 1f;
 
     public int lives;
     public int maxLives;
@@ -23,7 +21,8 @@ public class Player : MonoBehaviour {
     GameLogic gameLogic;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         sceneManagement = GameObject.FindGameObjectWithTag("Manager").GetComponent<SceneManagement>();
         gameLogic = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameLogic>();
         lives = maxLives;
@@ -31,9 +30,10 @@ public class Player : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 
-        if(transform.position.x <= rightBorder.position.x)
+        if (transform.position.x <= rightBorder.position.x)
         {
             //move the player right
             if (Input.GetKey(KeyCode.D))
@@ -54,7 +54,7 @@ public class Player : MonoBehaviour {
         }
         
 
-        if(lives <= 0)
+        if (lives <= 0)
         {
             gameLogic.StopTimer();
             sceneManagement.ChangeToScene("GameOver");

@@ -8,16 +8,9 @@ public class DeathCube : MonoBehaviour {
     Player player;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-
-        //tweak the movement (is rigidbody, so no actual falling code required)
-
 	}
 
     //create collision detection
