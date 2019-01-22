@@ -13,6 +13,8 @@ public class GameLogic : MonoBehaviour {
     private bool l1 = true;
     private bool l2 = true;
     private bool l3 = true;
+    [SerializeField] private GameObject projectile;
+    
 
     ObjectSpawner objectSpawner;
 
@@ -36,12 +38,14 @@ public class GameLogic : MonoBehaviour {
             l1 = false;
             objectSpawner.minDeathCubeAmount++;
             objectSpawner.maxDeathCubeAmount++;
+            objectSpawner.ApplesSpawnTime += 5;
         }
         else if (timer > TimeLevels[1] && l2)
         {
             l2 = false;
             objectSpawner.minDeathCubeAmount++;
             objectSpawner.maxDeathCubeAmount++;
+            objectSpawner.ApplesSpawnTime += 5;
         }
         else if (timer > TimeLevels[2] && l3)
         {
@@ -49,9 +53,15 @@ public class GameLogic : MonoBehaviour {
             objectSpawner.megaMode = true;
             objectSpawner.minDeathCubeAmount--;
             objectSpawner.maxDeathCubeAmount--;
+            objectSpawner.ApplesSpawnTime += 5;
+            objectSpawner.SpawnApples();
 
         }
 
+        //shooting timer not working 
+        //probably an additional bool varíable needed
+
+        
 
     }
 

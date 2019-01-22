@@ -113,6 +113,34 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &41044886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 41044887}
+  m_Layer: 0
+  m_Name: ProjectileSpawnPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &41044887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 41044886}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487806373}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &77483238
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,8 +251,8 @@ GameObject:
   m_Component:
   - component: {fileID: 107038408}
   m_Layer: 0
-  m_Name: SpawnPosition_Apple StartMarker
-  m_TagString: AppleSpawn
+  m_Name: SpawnPosition_PowerUps_StartMarker
+  m_TagString: PowerUpSpawn
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -297,9 +325,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 954511601}
   TimeLevels:
-  - 10
-  - 20
   - 30
+  - 60
+  - 90
+  shooting: 0
+  projectile: {fileID: 1668442079267882, guid: 996f223df1fb81747b7c22e120323e86, type: 2}
+  shootPos: {fileID: 41044887}
+  shootTimeOffset: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 657530621}
   m_Layer: 0
-  m_Name: SpawnPosition_DeathCube EndMarker
+  m_Name: SpawnPosition_DeathCube_EndMarker
   m_TagString: DeathCubeSpawn
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -800,8 +832,8 @@ GameObject:
   m_Component:
   - component: {fileID: 752350848}
   m_Layer: 0
-  m_Name: SpawnPosition_Apple EndMarker
-  m_TagString: AppleSpawn
+  m_Name: SpawnPosition_PowerUps_EndMarker
+  m_TagString: PowerUpSpawn
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1056,7 +1088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 997520837}
   m_Layer: 0
-  m_Name: SpawnPosition_DeathCube StartMarker
+  m_Name: SpawnPosition_DeathCube_StartMarker
   m_TagString: DeathCubeSpawn
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1075,6 +1107,11 @@ Transform:
   m_Father: {fileID: 1815770115}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1487806373 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4544964115347602, guid: c5ede51426cd2e145a050bf4a57fa664,
+    type: 2}
+  m_PrefabInternal: {fileID: 897359904}
 --- !u!1 &1551688051
 GameObject:
   m_ObjectHideFlags: 0

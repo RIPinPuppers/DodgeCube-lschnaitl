@@ -16,10 +16,8 @@ public class ObjectSpawner : MonoBehaviour {
     private float timerTimeApple;
     private float timerTimeMegaDeathCubes;
     public bool megaMode = false;
-    [SerializeField]
-    private float DeathCubesSpawnTime = 2;
-    [SerializeField]
-    private float ApplesSpawnTime = 10;
+    public float DeathCubesSpawnTime = 2;
+    public float ApplesSpawnTime = 10;
     
     //other changables
     public int minDeathCubeAmount = 2;
@@ -29,7 +27,7 @@ public class ObjectSpawner : MonoBehaviour {
     // Use this for initialization
     void Start () {
         DeathCubeSpawnPositions = GameObject.FindGameObjectsWithTag("DeathCubeSpawn");
-        AppleSpawnPositions = GameObject.FindGameObjectsWithTag("AppleSpawn");
+        AppleSpawnPositions = GameObject.FindGameObjectsWithTag("PowerUpSpawn");
 	}
 	
 	// Update is called once per frame
@@ -71,13 +69,13 @@ public class ObjectSpawner : MonoBehaviour {
 
 
     //function for spawning apples
-    void SpawnApples()
+    public void SpawnApples()
     {
         float randomX = Random.Range(AppleSpawnPositions[0].transform.position.x, AppleSpawnPositions[1].transform.position.x);
         Instantiate(apple, new Vector2(randomX, AppleSpawnPositions[0].transform.position.y), Quaternion.identity);
     }
     //function for spawning deathcubes
-    void SpawnDeathCubes()
+    public void SpawnDeathCubes()
     {
         for (int i = 0; i < Random.Range(minDeathCubeAmount, maxDeathCubeAmount); i++)
         {
@@ -86,9 +84,11 @@ public class ObjectSpawner : MonoBehaviour {
         }
     }
 
-    void SpawnMegaDeathCube()
+    public void SpawnMegaDeathCube()
     {
         float randomX = Random.Range(DeathCubeSpawnPositions[0].transform.position.x, DeathCubeSpawnPositions[1].transform.position.x);
         Instantiate(megaDeathCube, new Vector2(randomX, DeathCubeSpawnPositions[0].transform.position.y), Quaternion.identity);
     }
+
+
 }

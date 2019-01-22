@@ -16,7 +16,8 @@ public class Player : MonoBehaviour {
     public Color deathHitColor;
     public TextMeshProUGUI livesText;
 
-    
+    [SerializeField] Transform rightBorder;
+    [SerializeField] Transform leftBorder;
 
     SceneManagement sceneManagement;
     GameLogic gameLogic;
@@ -32,28 +33,32 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        //move the player right
-        if (Input.GetKey(KeyCode.D))
+        if(transform.position.x <= rightBorder.position.x)
         {
-            transform.position += new Vector3(1 * speed, 0, 0);
-            transform.Rotate(new Vector3(0,0,-1 * rotSpeed));
+            //move the player right
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.position += new Vector3(1 * speed, 0, 0);
+                transform.Rotate(new Vector3(0,0,-1 * rotSpeed));
+            }
         }
 
-        //move the player left 
-        if (Input.GetKey(KeyCode.A))
+        if (transform.position.x >= leftBorder.position.x)
         {
-            transform.position += new Vector3(1 * -speed, 0, 0);
-            transform.Rotate(new Vector3(0, 0, 1 * rotSpeed));
+            //move the player left 
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.position += new Vector3(1 * -speed, 0, 0);
+                transform.Rotate(new Vector3(0, 0, 1 * rotSpeed));
+            }
         }
+        
 
         if(lives <= 0)
         {
             gameLogic.StopTimer();
             sceneManagement.ChangeToScene("GameOver");
         }
-
-        //restrict movement to the floor borders
-        
     }
 
     public void ChangeLives(int amount, bool mode)
