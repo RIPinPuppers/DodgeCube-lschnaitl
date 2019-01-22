@@ -5,7 +5,7 @@ using UnityEngine;
 public class Apple : MonoBehaviour {
 
     Player player;
-    public float timeActive = 5;
+    [SerializeField] private readonly float timeActive = 5;
     
 	// Use this for initialization
 	void Start ()
