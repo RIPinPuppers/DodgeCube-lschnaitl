@@ -9,15 +9,15 @@ public class ObjectSpawner : MonoBehaviour {
     public GameObject deathCube;
     public GameObject megaDeathCube;
     //Serializeable spawn positions for the objects
-    private GameObject[] DeathCubeSpawnPositions;
-    private GameObject[] AppleSpawnPositions;
+    private GameObject[] deathCubeSpawnPositions;
+    private GameObject[] appleSpawnPositions;
     //timer variables
     private float timerTimeDeathCubes;
     private float timerTimeApple;
     private float timerTimeMegaDeathCubes;
     public bool megaMode = false;
-    public float DeathCubesSpawnTime = 2;
-    public float ApplesSpawnTime = 10;
+    public float deathCubesSpawnTime = 2;
+    public float applesSpawnTime = 10;
     
     //other changables
     public int minDeathCubeAmount = 2;
@@ -27,8 +27,8 @@ public class ObjectSpawner : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        DeathCubeSpawnPositions = GameObject.FindGameObjectsWithTag("DeathCubeSpawn");
-        AppleSpawnPositions = GameObject.FindGameObjectsWithTag("PowerUpSpawn");
+        deathCubeSpawnPositions = GameObject.FindGameObjectsWithTag("DeathCubeSpawn");
+        appleSpawnPositions = GameObject.FindGameObjectsWithTag("PowerUpSpawn");
 	}
 	
 	// Update is called once per frame
@@ -43,7 +43,7 @@ public class ObjectSpawner : MonoBehaviour {
         else if (timerTimeDeathCubes <= 0)
         {
             SpawnDeathCubes();
-            timerTimeDeathCubes = DeathCubesSpawnTime;
+            timerTimeDeathCubes = deathCubesSpawnTime;
         }
 
         //apple timer
@@ -54,7 +54,7 @@ public class ObjectSpawner : MonoBehaviour {
         else if (timerTimeApple <= 0)
         {
             SpawnApples();
-            timerTimeApple = ApplesSpawnTime;
+            timerTimeApple = applesSpawnTime;
         }
 
         //megadeathcube timer
@@ -65,7 +65,7 @@ public class ObjectSpawner : MonoBehaviour {
         else if (timerTimeMegaDeathCubes <= 0 && megaMode)
         {
             SpawnMegaDeathCube();
-            timerTimeMegaDeathCubes = DeathCubesSpawnTime;
+            timerTimeMegaDeathCubes = deathCubesSpawnTime;
         }
     }
 
@@ -73,23 +73,23 @@ public class ObjectSpawner : MonoBehaviour {
     //function for spawning apples
     public void SpawnApples()
     {
-        float randomX = Random.Range(AppleSpawnPositions[0].transform.position.x, AppleSpawnPositions[1].transform.position.x);
-        Instantiate(apple, new Vector2(randomX, AppleSpawnPositions[0].transform.position.y), Quaternion.identity);
+        float randomX = Random.Range(appleSpawnPositions[0].transform.position.x, appleSpawnPositions[1].transform.position.x);
+        Instantiate(apple, new Vector2(randomX, appleSpawnPositions[0].transform.position.y), Quaternion.identity);
     }
     //function for spawning deathcubes
     public void SpawnDeathCubes()
     {
         for (int i = 0; i < Random.Range(minDeathCubeAmount, maxDeathCubeAmount); i++)
         {
-            float randomX = Random.Range(DeathCubeSpawnPositions[0].transform.position.x, DeathCubeSpawnPositions[1].transform.position.x);
-            Instantiate(deathCube, new Vector2(randomX, DeathCubeSpawnPositions[0].transform.position.y), Quaternion.identity);
+            float randomX = Random.Range(deathCubeSpawnPositions[0].transform.position.x, deathCubeSpawnPositions[1].transform.position.x);
+            Instantiate(deathCube, new Vector2(randomX, deathCubeSpawnPositions[0].transform.position.y), Quaternion.identity);
         }
     }
 
     public void SpawnMegaDeathCube()
     {
-        float randomX = Random.Range(DeathCubeSpawnPositions[0].transform.position.x, DeathCubeSpawnPositions[1].transform.position.x);
-        Instantiate(megaDeathCube, new Vector2(randomX, DeathCubeSpawnPositions[0].transform.position.y), Quaternion.identity);
+        float randomX = Random.Range(deathCubeSpawnPositions[0].transform.position.x, deathCubeSpawnPositions[1].transform.position.x);
+        Instantiate(megaDeathCube, new Vector2(randomX, deathCubeSpawnPositions[0].transform.position.y), Quaternion.identity);
     }
 
 

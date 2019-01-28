@@ -38,14 +38,14 @@ public class GameLogic : MonoBehaviour {
             l1 = false;
             objectSpawner.minDeathCubeAmount++;
             objectSpawner.maxDeathCubeAmount++;
-            objectSpawner.ApplesSpawnTime += 5;
+            objectSpawner.applesSpawnTime += 5;
         }
         else if (timer > TimeLevels[1] && l2)
         {
             l2 = false;
             objectSpawner.minDeathCubeAmount++;
             objectSpawner.maxDeathCubeAmount++;
-            objectSpawner.ApplesSpawnTime += 5;
+            objectSpawner.applesSpawnTime += 5;
         }
         else if (timer > TimeLevels[2] && l3)
         {
@@ -53,7 +53,7 @@ public class GameLogic : MonoBehaviour {
             objectSpawner.megaMode = true;
             objectSpawner.minDeathCubeAmount--;
             objectSpawner.maxDeathCubeAmount--;
-            objectSpawner.ApplesSpawnTime += 5;
+            objectSpawner.applesSpawnTime += 5;
             objectSpawner.SpawnApples();
 
         }
