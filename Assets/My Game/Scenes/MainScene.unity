@@ -113,34 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &41044886
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 41044887}
-  m_Layer: 0
-  m_Name: ProjectileSpawnPosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &41044887
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 41044886}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.36, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1487806373}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &77483238
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,7 +328,6 @@ MonoBehaviour:
   - 30
   - 60
   - 90
-  projectile: {fileID: 1668442079267882, guid: 996f223df1fb81747b7c22e120323e86, type: 2}
 --- !u!1 &307641784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,11 +1141,6 @@ Transform:
   m_Father: {fileID: 1815770115}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1487806373 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4544964115347602, guid: c5ede51426cd2e145a050bf4a57fa664,
-    type: 2}
-  m_PrefabInternal: {fileID: 897359904}
 --- !u!1 &1551688051
 GameObject:
   m_ObjectHideFlags: 0
