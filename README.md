@@ -5,7 +5,7 @@
 	Ein Player kann mit den Tasten A und D, Quadraten ausweichen die von oben auf ihn zukommen.
 
  + Development Platform: 
-	Windows 10, Unity 2018.2.14f1, Visual Studio Community 2017 15.9, .NET 4.3, 
+	Windows 10, Unity 2018.2.14f1, Visual Studio Community 2017 15.9, Scripting Runtime Version .NET 3.5, Api Compatibility Level .NET 2.0 Subset 
 
  + Target Platform: 
 	PC Standalone
