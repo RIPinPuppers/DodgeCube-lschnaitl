@@ -9,8 +9,8 @@ public class Player : MonoBehaviour {
     [SerializeField] private float speed;
     [SerializeField] private float rotSpeed = 1f;
 
-    public int lives;
-    public int maxLives;
+    [HideInInspector] public int lives;
+    public int maxLives = 3;
     public Color deathHitColor;
     public TextMeshProUGUI livesText;
 
@@ -36,7 +36,7 @@ public class Player : MonoBehaviour {
         if (transform.position.x <= rightBorder.position.x)
         {
             //move the player right
-            if (Input.GetKey(KeyCode.D))
+            if (Input.GetKey(KeyCode.D)) // enum 
             {
                 transform.position += new Vector3(1 * speed, 0, 0);
                 transform.Rotate(new Vector3(0,0,-1 * rotSpeed));
@@ -59,6 +59,8 @@ public class Player : MonoBehaviour {
             gameLogic.StopTimer();
             sceneManagement.ChangeToScene("GameOver");
         }
+
+        
     }
 
     public void ChangeLives(int amount, bool mode)

@@ -70,13 +70,14 @@ public class ObjectSpawner : MonoBehaviour {
     }
 
 
-    //function for spawning apples
+    //methode for spawning apples
     public void SpawnApples()
     {
         float randomX = Random.Range(appleSpawnPositions[0].transform.position.x, appleSpawnPositions[1].transform.position.x);
         Instantiate(apple, new Vector2(randomX, appleSpawnPositions[0].transform.position.y), Quaternion.identity);
     }
-    //function for spawning deathcubes
+
+    //methode for spawning deathcubes
     public void SpawnDeathCubes()
     {
         for (int i = 0; i < Random.Range(minDeathCubeAmount, maxDeathCubeAmount); i++)
