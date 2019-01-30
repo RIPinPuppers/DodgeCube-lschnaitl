@@ -1,20 +1,32 @@
-Name: DodgeCube
+ + Name: 
+	DodgeCube
 
-Beschreibung: Ein Player kann mit den Tasten A und D, Quadraten ausweichen die von oben auf ihn zukommen.
+ + Beschreibung: 
+	Ein Player kann mit den Tasten A und D, Quadraten ausweichen die von oben auf ihn zukommen.
 
-Development Platform: Windows 10, Unity 2018.2.14f1, Visual Studio Community 2017 15.9
+ + Development Platform: 
+	Windows 10, Unity 2018.2.14f1, Visual Studio Community 2017 15.9, .NET 4.3, 
 
-Target Platform: PC Standalone
+ + Target Platform: 
+	PC Standalone
 
-Used resources: none
+ + Used resources: none
 
-Game Style: 2D
+ + Progress: 100%
 
-Status: Implementation fertig, code Säuberung im gange
-Steuerung: Cursor (Maus) für Menü Elemente, Tastaturtasten A und D um den Spieler nach links und rechts zu bewegen.
+ + Game Style: 2D
+
+ + Status: 
+	Implementation fertig, code Säuberung im gange
+
+ + Steuerung: 
+	Cursor (Maus) für Menü Elemente, Tastaturtasten A und D um den Spieler nach links und rechts zu bewegen.
 
 <strong>Konzept:</strong>
 
 <div>
 <img src="./Screenshots/Screenshot1.jpg" width="250">
+<img src="./Screenshots/Screenshot2.png" width="250">
+<img src="./Screenshots/Screenshot3.png" width="250">
+<img src="./Screenshots/Screenshot4.png" width="250">
 </div>
