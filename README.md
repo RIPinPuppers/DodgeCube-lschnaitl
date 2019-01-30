@@ -30,3 +30,6 @@
 <img src="./Screenshots/Screenshot3.png" width="250">
 <img src="./Screenshots/Screenshot4.png" width="250">
 </div>
+
+
+<stong>Made by Leonhard Schnaitl</strong>
