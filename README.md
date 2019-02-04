@@ -17,12 +17,13 @@
  + Game Style: 2D
 
  + Status: 
-	Finished
+	Implementation fertig, code Säuberung im gange
 
  + Steuerung: 
 	Cursor (Maus) für Menü Elemente, Tastaturtasten A und D um den Spieler nach links und rechts zu bewegen.
 
 <h1><a href="https://www.sharemygame.com/share/fa8a80f0-db23-42a6-aa30-6c57e4abfd74"> PLAY THE GAME HERE </a></h1>
+<h3> or watch an exclusive gameplay with a developer </h3>
 
 <strong>Konzept:</strong>
 
