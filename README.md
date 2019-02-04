@@ -22,6 +22,8 @@
  + Steuerung: 
 	Cursor (Maus) für Menü Elemente, Tastaturtasten A und D um den Spieler nach links und rechts zu bewegen.
 
+<h1><a href="https://www.sharemygame.com/share/fa8a80f0-db23-42a6-aa30-6c57e4abfd74"> PLAY THE GAME HERE </a></h1>
+
 <strong>Konzept:</strong>
 
 <div>
@@ -32,4 +34,4 @@
 </div>
 
 
-<stong>Made by Leonhard Schnaitl</strong>
+<strong>Made by Leonhard Schnaitl</strong>
