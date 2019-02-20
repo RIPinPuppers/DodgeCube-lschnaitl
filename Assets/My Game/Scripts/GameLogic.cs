@@ -25,13 +25,11 @@ public class GameLogic : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-
         if (setTimer)
         {
             timer += Time.deltaTime;
             timerText.text = timer.ToString("F1") + " sec";
         }
-
 
         if (timer > TimeLevels[0] && l1)
         {

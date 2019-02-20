@@ -32,7 +32,6 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-
         if (transform.position.x <= rightBorder.position.x)
         {
             //move the player right
@@ -52,15 +51,12 @@ public class Player : MonoBehaviour {
                 transform.Rotate(new Vector3(0, 0, 1 * rotSpeed));
             }
         }
-        
 
         if (lives <= 0)
         {
             gameLogic.StopTimer();
             sceneManagement.ChangeToScene("GameOver");
         }
-
-        
     }
 
     public void ChangeLives(int amount, bool mode)
@@ -72,10 +68,4 @@ public class Player : MonoBehaviour {
 
         livesText.text = lives.ToString();
     }
-
-
-
-    
-
-
 }
